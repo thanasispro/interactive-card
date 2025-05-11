@@ -121,11 +121,11 @@ body {
   line-height: normal;
 }
 .rating__button:hover {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
   color: hsl(213, 19%, 18%);
 }
 .rating__button--selected {
-  background-color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
   color: hsl(213, 19%, 18%);
 }
 @media (min-width: 48rem) {

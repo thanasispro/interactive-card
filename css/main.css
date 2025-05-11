@@ -43,7 +43,7 @@ body {
   }
 }
 .rating__icon {
-  background-color: hsla(213, 19%, 18%, 0.1);
+  background-color: hsl(213, 19%, 18%);
   width: 2.5rem;
   height: 2.5rem;
   min-width: 2.5rem;

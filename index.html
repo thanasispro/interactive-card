@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="rating">
+      <article class="rating__card">
+        <!-- Section 1: Star icon -->
+        <div class="rating__icon">
+          <img src="./images/icon-star.svg" alt="Star icon" />
+        </div>
+
+        <!-- Section 2: Text content and rating buttons -->
+        <section class="rating__content">
+          <h1 class="rating__title">How did we do?</h1>
+          <p class="rating__text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <fieldset class="rating__options">
+            <button type="button" class="rating__button" value="1">1</button>
+            <button type="button" class="rating__button" value="2">2</button>
+            <button type="button" class="rating__button" value="3">3</button>
+            <button type="button" class="rating__button" value="4">4</button>
+            <button type="button" class="rating__button" value="5">5</button>
+          </fieldset>
+        </section>
+
+        <!-- Section 3: Submit button -->
+        <button type="button" class="rating__submit">Submit</button>
+      </article>
+    </main>
+
+    <!-- Thank you state (initially hidden) -->
+    <div class="thankyou">
+      <article class="thankyou__card">
+        <div class="thankyou__image">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+        </div>
+        <p class="thankyou__result">
+          You selected <span id="rating-result">0</span> out of 5
+        </p>
+        <section class="thankyou__content">
+          <h2 class="thankyou__title">Thank you!</h2>
+          <p class="thankyou__text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
